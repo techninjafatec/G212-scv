@@ -94,7 +94,7 @@ public class ClienteServicoI implements ClienteServico {
 
 	public String sendMail(Cliente cliente) {
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("techninjafatec@gmail.com");
+		message.setFrom("bodysites@gmail.com");
 		message.setTo(cliente.getEmail());
 		message.setSubject("Confirmação do cadastro de cliente");
 		message.setText("Olá - " + cliente.getNome() +"\n"
